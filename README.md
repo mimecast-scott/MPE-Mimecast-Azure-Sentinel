@@ -6,7 +6,7 @@ In order to simplify the requirements to collect Mimecast logs and share with Az
 
 Give it a go
 
-`docker run -p 5000:5000 -it smck83/mimecast-sentinel`
+`docker run -p 5000:5000 smck83/mimecast-sentinel`
 
 Then access http://localhost:5000 or http://\<ip-address\>:5000
 
