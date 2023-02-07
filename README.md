@@ -8,5 +8,8 @@ Give it a go
 
 `docker run -p 5000:5000 -v /my/local/path:/opt/mimecast smck83/mimecast-sentinel`
 
+Or run detached
+`docker run -d -p 5000:5000 -v /my/local/path:/opt/mimecast smck83/mimecast-sentinel`
+
 Then access http://localhost:5000 or http://\<ip-address\>:5000
 
