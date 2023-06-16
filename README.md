@@ -1,8 +1,9 @@
 # Mimecast Azure Sentinel Integration
 `DISCLAIMER: This is an unofficial Dockerized version of the integration bundle on the Mimecast website`
 
+In order to simplify the requirements to collect Mimecast logs so they can then be shared with Azure Sentinel, I have created a docker container. This Dockerfile covers the steps in the [Mimecast KB here](https://community.mimecast.com/s/article/Azure-Sentinel) up to the section of `Configuring the Azure Sentinel Workspace`
 
-In order to simplify the requirements to collect Mimecast logs and share with Azure Sentinel, I have created a docker container. This Dockerfile covers the steps in the [Mimecast KB here](https://community.mimecast.com/s/article/Azure-Sentinel) up to the section of `Configuring the Azure Sentinel Workspace`
+NOTE: This software does not run the log collection from Mimecast and push to Microsoft sentinel. Once you are colelcting logs and storing them on your host e.g. here `/my/local/path` you will need to install the Microsoft agent to push the logs to your Microsoft tenant. e.g. https://learn.microsoft.com/en-us/azure/sentinel/connect-log-forwarder?tabs=rsyslog#run-the-deployment-script\
 
 # Give it a go using Ubuntu 18.04:
 NOTE: This OS is end of standard 5 year maintenance windows on  31st May 2023
